@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .summary-box {
+            background-color: #f8f9fa;
+            border-left: 6px solid #007bff;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Report</h1>
+
+    <div class="summary-box">
+        <h2>1. Dataset Overview</h2>
+        <p><strong>Total records:</strong> 50,752</p>
+        <p><strong>Date range:</strong> 2019-07-01 06:47:00 to 2025-02-26 10:30:00</p>
+    </div>
+
+    <h2>2. BMI Distribution</h2>
+    <p>This plot shows the distribution of BMI values for patients, focusing on values less than or equal to 70.</p>
+    <iframe src="bmi_histogram.html" width="1000" height="600" frameborder="0"></iframe>
+    <p>The histogram shows that most patients have BMI between 20 and 35...</p>
+
+    <h2>3. Age Distribution</h2>
+    <p>This plot shows the distribution of age values for patients, focusing on values between 18 and 100.</p>
+    <iframe src="age_histogram.html" width="1000" height="600" frameborder="0"></iframe>
+    <p>The histogram shows that most patients have age between 40 and 65...</p>
+	
+	  <h2>3. Sex Distribution</h2>
+    <p>This plot shows the distribution of sex values for patients, focusing on values between 18 and 100.</p>
+    <iframe src="sex_distribution.html" width="1000" height="600" frameborder="0"></iframe>
+    <p>The histogram shows that most patients have age between 40 and 65...</p>
+	
+	 <h2>4. ASA Distribution</h2>
+    <p>This plot shows the distribution of ASA values for patients.</p>
+    <iframe src="asa_distribution.html" width="1000" height="600" frameborder="0"></iframe>
+
+</body>
+</html>
